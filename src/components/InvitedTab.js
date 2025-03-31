@@ -44,6 +44,7 @@ const InvitedTab = () => {
  return (
      <div>
          <h2>Invited Leads</h2>
+         <hr />
          {leads.map(lead => (
              <div key={lead.id} className="card mb-3">
                  <div className="card-body">
