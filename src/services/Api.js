@@ -18,7 +18,7 @@ export const acceptLead = async (lead) => {
     const response = await api.post('/Leads/AcceptLead', lead);
     return response.data.leads;
 };
- 
+
 export const declineLead = async (lead) => {
     const response = await api.post('/Leads/DeclineLead', lead);
     return response.data.leads;
