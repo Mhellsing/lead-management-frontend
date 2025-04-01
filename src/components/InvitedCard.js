@@ -50,22 +50,23 @@ const InvitedCard = ({ lead, handleAccept, handleDecline }) => {
           </CardContent>
           <CardActions>           
             <Button
-              size="large"
+              size="medium"
               onClick={() => handleAccept(lead.id)}
               variant="contained"
-              style={{ backgroundColor: "#ef6c00" }}
+              style={{marginLeft: 14, marginBottom: 14, backgroundColor: "#ef6c00" }}
+              
             >
               Accept
             </Button>
             <Button
-              size="large"
+              size="medium"
               variant="contained"
-              style={{ backgroundColor: "#bdbdbd" }}
-              onClick={() => handleDecline(lead.id)}
+              style={{marginBottom: 14, backgroundColor: "#bdbdbd" }}
+              onClick={() => handleDecline(lead.id)}              
             >
               Decline
             </Button>
-            <Stack direction="row" spacing={2} alignItems="center">
+            <Stack style={{marginBottom: 14}} direction="row" spacing={2} alignItems="center">
               <h3>${lead.price}</h3>
               <span>Lead Invitation</span>
             </Stack>
