@@ -22,6 +22,5 @@ export const acceptLead = async (lead) => {
 export const declineLead = async (lead) => {
     const response = await api.post('/Leads/DeclineLead', lead);
     return response.data.leads;
-};
+};   
    
-   export default api;

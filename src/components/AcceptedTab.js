@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getLeadsWithStatusAccepted } from "../services/Api";
 import Stack from "@mui/material/Stack";
 import AcceptedCard from "./AcceptedCard";
+import EmptyLead from "./EmptyLead";
 
 const AcceptedTab = () => {
   const [leads, setLeads] = useState([]);
@@ -19,13 +20,16 @@ const AcceptedTab = () => {
   }, []);
 
   return (
-    <div>      
-      <hr />
-      <Stack direction="column" spacing={2} padding={3}>
+    <div>
+      {leads?.length === 0 ? (
+        <EmptyLead tab="accepted" />
+      ) : (
+        <Stack direction="column" spacing={2} padding={3}>
         {leads.map((lead) => (
           <AcceptedCard lead={lead} />
         ))}
       </Stack>
+      )}      
     </div>
   );
 };

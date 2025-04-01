@@ -7,8 +7,8 @@ const App = () => {
       className="container mt-5"
       style={{
         maxWidth: "800px",
-        margin: "0 auto",
-        backgroundColor: "#e0e3e7",
+        margin: "16px auto",
+        backgroundColor: "#e0e3e7",        
       }}
     >
       <Tabs />

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getLeadsWithStatusNew, acceptLead, declineLead } from "../services/Api";
 import Stack from "@mui/material/Stack";
 import InvitedCard from "./InvitedCard";
+import EmptyLead from "./EmptyLead";
 
 const InvitedTab = () => {
   const [leads, setLeads] = useState([]);
@@ -39,17 +40,18 @@ const InvitedTab = () => {
   };
 
   return (
-    <div>      
-      <hr />
-      <Stack direction="column" spacing={2} padding={3}>
-        {leads.map((lead) => (
-          <InvitedCard
-            lead={lead}
-            handleAccept={handleAccept}
-            handleDecline={handleDecline}
-          />
-        ))}
-      </Stack>
+    <div>
+      {leads?.length === 0 ? (
+        <EmptyLead tab="invited" />
+      ) : <Stack direction="column" spacing={2} padding={3}>
+      {leads.map((lead) => (
+        <InvitedCard
+          lead={lead}
+          handleAccept={handleAccept}
+          handleDecline={handleDecline}
+        />
+      ))}
+    </Stack>}
     </div>
   );
 };
