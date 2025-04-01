@@ -9,3 +9,7 @@ export const formatDate = (dateString) => {
     
     return `${formattedMonthDay} @ ${formattedTime}`;
    };
+
+export const formatInitialForName = (name) => {
+    return name.substring(0, 1);
+}

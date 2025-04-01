@@ -1,13 +1,18 @@
-import React from 'react';
-import InvitedTab from './components/InvitedTab';
-import AcceptedTab from './components/AcceptedTab';
+import React from "react";
+import Tabs from "./components/Tabs";
 
 const App = () => {
   return (
-      <div className="container mt-5">
-          <InvitedTab />
-          <AcceptedTab />
-      </div>
+    <div
+      className="container mt-5"
+      style={{
+        maxWidth: "800px",
+        margin: "0 auto",
+        backgroundColor: "#e0e3e7",
+      }}
+    >
+      <Tabs />
+    </div>
   );
 };
 
