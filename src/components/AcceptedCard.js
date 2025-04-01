@@ -11,7 +11,6 @@ import WorkIcon from "@mui/icons-material/Work";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
 
-
 const AcceptedCard = ({ lead }) => {
   return (
     <Box>
@@ -29,7 +28,7 @@ const AcceptedCard = ({ lead }) => {
                 </Stack>
               </Stack>
               <hr />
-              <Stack direction="row" spacing={5} alignItems={"center"}>
+              <Stack direction="row" spacing={3} alignItems={"center"}>
                 <Stack direction="row" spacing={1} alignItems={"center"}>
                   <LocationOnIcon color="action" />
                   <span>{lead.suburb}</span>
@@ -46,18 +45,19 @@ const AcceptedCard = ({ lead }) => {
                 </Stack>
               </Stack>
               <hr />
-              <Stack direction="row" spacing={2} alignItems="center"><Stack direction="row" spacing={2} alignItems="center">
+              <Stack direction="row" spacing={3} alignItems="center">
+                <Stack direction="row" spacing={0.8} alignItems="center">
                   <PhoneIcon color="action" />
                   <span>{lead.phoneNumber}</span>
                 </Stack>
-                <Stack direction="row" spacing={2}  alignItems="center">
+                <Stack direction="row" spacing={0.8} alignItems="center">
                   <MailIcon color="action" />
                   <span>{lead.email}</span>
                 </Stack>
               </Stack>
-                <Stack direction="row" alignItems="center">
-                  {lead.description}
-                </Stack>              
+              <Stack direction="row" alignItems="center">
+                {lead.description}
+              </Stack>
             </Stack>
           </CardContent>
         </React.Fragment>

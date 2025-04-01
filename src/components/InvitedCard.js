@@ -29,15 +29,15 @@ const InvitedCard = ({ lead, handleAccept, handleDecline }) => {
               </Stack>              
               <hr/>
               <Stack direction="row"  spacing={5} alignItems={"center"}>
-                <Stack direction="row" spacing={1} alignItems={"center"}>
+                <Stack direction="row" spacing={0.8} alignItems={"center"}>
                   <LocationOnIcon color="action" />
                   <span>{lead.suburb}</span>
                 </Stack>
-                <Stack direction="row" spacing={1} alignItems="center">
+                <Stack direction="row" spacing={0.8} alignItems="center">
                   <WorkIcon color="action" />
                   <span>{lead.category}</span>
                 </Stack>
-                <Stack direction="row" spacing={1} alignItems="center">                  
+                <Stack direction="row" spacing={0.8} alignItems="center">                  
                   <span>Job ID: {lead.id}</span>
                 </Stack>                                      
               </Stack>
