@@ -20,8 +20,7 @@ Antes de começar, certifique-se de ter os seguintes itens instalados:
 
 ## Instalação
 
-### 1. Clone o repositório  
-- git clone https://github.com/Mhellsing/lead-management-frontend.git
+- Clone este repositório com o seguinte comando: git clone https://github.com/Mhellsing/lead-management-frontend.git
 - Execute o VS Code
 - clique no campo **Open Folder** conforme a imagem abaixo:  
   ![image](https://github.com/user-attachments/assets/3ba64ba2-ad8b-4f93-875d-1257d03410d5)
