@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Gerenciamento de Leads - SPA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+Este projeto se trata de uma  Single Page Application (SPA) desenvolvida com **React** para gerenciar leads de uma empresa. A interface foi construída utilizando a biblioteca de componentes **Material-UI**, enquanto o **Axios** é usado para realizar chamadas aos endpoints da API. O desenvolvimento foi realizado no **Visual Studio Code**. Em resumo temos aqui a interface de usuário para visualização das leads que nos é trazida pela api **LeadManagementApi**.
 
-In the project directory, you can run:
+## Funcionalidades
+- Listagem de leads existentes na aba Invited.
+- Listagem de leads existentes na aba Accepted.
+- Confirmação de um card de leads apresentado.
+- Recusa de um card de leads apresentado.
 
-### `npm start`
+## Pré-requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Antes de começar, certifique-se de ter os seguintes itens instalados:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Node.js** (versão 22)
+- **Gerenciador de pacotes - NPM** (versão 10.9.2)
+- **Git** (para clonar o repositório)
 
-### `npm test`
+## Instalação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Clone o repositório  
+- git clone https://github.com/Mhellsing/lead-management-frontend.git
+- Execute o VS Code
+- clique no campo **Open Folder** conforme a imagem abaixo:  
+  ![image](https://github.com/user-attachments/assets/3ba64ba2-ad8b-4f93-875d-1257d03410d5)
+- Selecione a pasta onde o repositório foi clonado
 
-### `npm run build`
+## Iniciar o Servidor
+1. Abra uma aba do terminal no VS Code
+2. Execute o comando npm start
+3. Esta api será disponibilizada no endereço: http://localhost:3000
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Endpoints consumidos pela aplicação
+| Método | Endpoint                            | Descrição                                        |
+|--------|-------------------------------------|--------------------------------------------------|
+| GET    | `/Leads/GetLeadsWithStatusNew`      | Retorna todas as leads com status: New           |
+| GET    | `/Leads/GetLeadsWithStatusAccepted` | Retorna todas as leads com status: Accepted      |
+| POST   | `/Leads/AcceptLead`                 | Aceita uma lead                                  |
+| POST   | `/Leads/DeclineLead`                | Recusa uma lead                                  |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Estrutura de pastas
+- src  
+  - components (Armazena os componentes utilizados para criação da interface)  
+  - services (Armazena o serviço para consumo da api via Axios)  
+  - utils (Agrupa métodos uteis tais como formatação de data, strings e etc)  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Tecnologias Utilizadas
+- **React**: Biblioteca JavaScript para construção de interfaces.
+- **Material-UI**: Biblioteca de componentes e ícones.
+- **Axios**: Biblioteca para consumo de APIs REST.
+- **Visual Studio Code**: Editor de texto utilizado no desenvolvimento.
