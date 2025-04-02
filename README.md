@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este projeto se trata de uma  Single Page Application (SPA) desenvolvida com **React** para gerenciar leads de uma empresa. A interface foi construída utilizando a biblioteca de componentes **Material-UI**, enquanto o **Axios** é usado para realizar chamadas aos endpoints da API. O desenvolvimento foi realizado no **Visual Studio Code**. Em resumo temos aqui a interface de usuário para visualização das leads que nos é trazida pela api **LeadManagementApi**.
+Este projeto se trata de uma  Single Page Application (SPA) desenvolvida com **React** para gerenciar leads de uma empresa. A interface foi construída utilizando a biblioteca de componentes **Material-UI**, enquanto o **Axios** é usado para realizar chamadas aos endpoints da API. O desenvolvimento foi realizado no **Visual Studio Code**. Em resumo temos aqui a interface de usuário para visualização e gerenciamento das leads que nos é trazida pela api **LeadManagementApi**.
 
 ## Funcionalidades
 - Listagem de leads existentes na aba Invited.
